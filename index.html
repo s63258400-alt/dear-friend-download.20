@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dear Friend - অ্যাপ ডাউনলোড</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fdf2f4; --ink:#2a1a30; --muted:#6e5a74;
+  --rose:#e0577a; --plum:#4a2158; --bubble:#ffffff; --mine:#4a2158; --mine-ink:#fff;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#1b1021; --ink:#f6e9f0; --muted:#b9a3c0; --rose:#ff7a9c; --plum:#c9a0e0; --bubble:#2c1b35; --mine:#ff7a9c; --mine-ink:#2a1020; }
+}
+*{box-sizing:border-box;margin:0}
+html{background:var(--bg)}
+body{font-family:'Hind Siliguri',system-ui,sans-serif;color:var(--ink);background:var(--bg);min-height:100vh;line-height:1.6;padding:24px 20px 40px;display:flex;justify-content:center}
+main{width:100%;max-width:460px}
+h1{font-size:2.6rem;line-height:1.1;font-weight:700;color:var(--plum);margin-top:8px}
+.sub{color:var(--muted);margin:10px 0 26px;font-size:1.05rem}
+.chat{display:flex;flex-direction:column;gap:10px;margin-bottom:28px}
+.b{max-width:82%;padding:10px 14px;border-radius:18px;font-size:1rem;background:var(--bubble);box-shadow:0 1px 0 rgba(0,0,0,.06)}
+.b.in{border-bottom-left-radius:4px;align-self:flex-start}
+.b.me{border-bottom-right-radius:4px;align-self:flex-end;background:var(--mine);color:var(--mine-ink)}
+.dl{display:block;text-align:center;text-decoration:none;background:var(--rose);color:#fff;font-weight:700;font-size:1.2rem;padding:16px;border-radius:16px}
+.dl:focus-visible{outline:3px solid var(--plum);outline-offset:3px}
+.dl:active{transform:scale(.98)}
+.meta{text-align:center;color:var(--muted);font-size:.9rem;margin-top:10px}
+.how{margin-top:30px;padding-top:20px;border-top:1px solid color-mix(in srgb,var(--muted) 30%,transparent)}
+.how h2{font-size:1.1rem;margin-bottom:8px;color:var(--plum)}
+.how ol{padding-left:1.2rem;color:var(--muted)}
+.how li{margin-bottom:4px}
+.by{margin-top:30px;text-align:center;font-size:.95rem;color:var(--muted)}
+</style>
+</head>
+<body>
+<main>
+  <h1>Dear Friend</h1>
+  <p class="sub">বাংলায় কথা বলার মতো একজন বন্ধু, এখন আপনার ফোনে।</p>
+
+  <div class="chat" aria-hidden="true">
+    <div class="b in">কেমন আছো? আজ কী করলে?</div>
+    <div class="b me">মন ভালো নেই রে</div>
+    <div class="b in">আমাকে বলো, আমি শুনছি।</div>
+  </div>
+
+  <a class="dl" href="DearFriend.apk" download>অ্যাপ ডাউনলোড করুন (Android)</a>
+  <p class="meta">APK ফাইল &middot; শুধু Android ফোনের জন্য</p>
+
+  <section class="how">
+    <h2>ইনস্টল করার নিয়ম</h2>
+    <ol>
+      <li>উপরের বাটনে চেপে ফাইলটি ডাউনলোড করুন।</li>
+      <li>ডাউনলোড হলে ফাইলটি খুলুন।</li>
+      <li>"Unknown sources" বা "এই উৎস থেকে ইনস্টল" অনুমতি চাইলে চালু করুন।</li>
+      <li>Install চেপে অ্যাপ খুলুন।</li>
+    </ol>
+  </section>
+
+</main>
+</body>
+</html>
